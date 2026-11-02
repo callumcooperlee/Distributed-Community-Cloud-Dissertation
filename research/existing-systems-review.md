@@ -132,29 +132,58 @@ Twelve in-scope stories plus two marked Won't, each traced to a gap above or a l
 
 ### Must
 
-- **R1:** As a community member, I want my node to find other nodes without any central server, so the network keeps working if anyone leaves. *From:* Storj satellites, Tahoe-LAFS introducer. *Objective:* O3.
-- **R2:** As a data owner, I want files encrypted on my device before they leave it, so no host can read them. *From:* Tahoe-LAFS; Hofmann & Truong 2024; commercial providers holding keys. *Objective:* O2.
-- **R3:** As a data owner, I want lost copies recreated automatically when a device drops out, so my files survive without me managing them. *From:* IPFS, Hyphanet, Hypercore (no repair); Sia (owner repairs). *Objective:* O5.
-- **R4:** As a community member, I want to contribute spare disk to a shared pool, so together we store more than any one device holds. *From:* Syncthing (full copies only). *Objective:* O2.
-- **R5:** As a community member, I want to take part without tokens or payments, so joining only requires being trusted. *From:* Sia, Filecoin, Storj. *Objective:* scope.
-- **R7:** As a laptop or phone owner, I want my device to go offline whenever it needs to without putting anyone's data at risk. *From:* the churn gap; Tahoe-LAFS assumes always-on servers. *Objective:* O6.
-- **R10:** As a data owner, I want to store and retrieve a file with one CLI command, so I can use the system without understanding how it works. *From:* commercial cloud usability. *Objective:* O2.
+- **R1:** As a community member, I want my node to find other nodes without any central server, so the network keeps working if anyone leaves.
+	- *From:* Storj satellites, Tahoe-LAFS introducer
+	- *Objective:* O3
+- **R2:** As a data owner, I want files encrypted on my device before they leave it, so no host can read them.
+	- *From:* Tahoe-LAFS; Hofmann & Truong 2024; commercial providers holding keys
+	- *Objective:* O2
+- **R3:** As a data owner, I want lost copies recreated automatically when a device drops out, so my files survive without me managing them.
+	- *From:* IPFS, Hyphanet, Hypercore (no repair); Sia (owner repairs)
+	- *Objective:* O5
+- **R4:** As a community member, I want to contribute spare disk to a shared pool, so together we store more than any one device holds.
+	- *From:* Syncthing (full copies only)
+	- *Objective:* O2
+- **R5:** As a community member, I want to take part without tokens or payments, so joining only requires being trusted.
+	- *From:* Sia, Filecoin, Storj
+	- *Objective:* scope
+- **R7:** As a laptop or phone owner, I want my device to go offline whenever it needs to without putting anyone's data at risk.
+	- *From:* the churn gap; Tahoe-LAFS assumes always-on servers
+	- *Objective:* O6
+- **R10:** As a data owner, I want to store and retrieve a file with one CLI command, so I can use the system without understanding how it works.
+	- *From:* commercial cloud usability
+	- *Objective:* O2
 
 ### Should
 
-- **R6:** As a node, I want to place data on peers according to their observed reliability, so fewer copies are needed for the same durability. *From:* Storj reputation; Li & Dabek 2006. *Objective:* O5, O6.
-- **R8:** As a data owner, I want to delete or export my data at any time, so I'm never locked in. *From:* Daniel & Tschorsch 2022, p. 49 (deleting personal data); Opara-Martins et al. 2016. *Objective:* O2.
-- **R9:** As a host, I want repair traffic limited to what my upload can handle, so contributing doesn't slow my connection. *From:* Friendstore; Chun et al. 2006. *Objective:* O5.
-- **R11:** As a community member, I want to see what each node has contributed and how reliable it's been, so contribution is fair and visible. *From:* Volunteer Currency, limited to accounting. *Objective:* O4.
+- **R6:** As a node, I want to place data on peers according to their observed reliability, so fewer copies are needed for the same durability.
+	- *From:* Storj reputation; Li & Dabek 2006
+	- *Objective:* O5, O6
+- **R8:** As a data owner, I want to delete or export my data at any time, so I'm never locked in.
+	- *From:* Daniel & Tschorsch 2022, p. 49 (deleting personal data); Opara-Martins et al. 2016
+	- *Objective:* O2
+- **R9:** As a host, I want repair traffic limited to what my upload can handle, so contributing doesn't slow my connection.
+	- *From:* Friendstore; Chun et al. 2006
+	- *Objective:* O5
+- **R11:** As a community member, I want to see what each node has contributed and how reliable it's been, so contribution is fair and visible.
+	- *From:* Volunteer Currency, limited to accounting
+	- *Objective:* O4
 
 ### Could
 
-- **R12:** As a data owner, I want erasure coding instead of full copies, so my data takes up less of the community's space. *From:* Storj, Tahoe-LAFS. *Objective:* O5 stretch. First to cut if January slips.
+- **R12:** As a data owner, I want erasure coding instead of full copies, so my data takes up less of the community's space.
+	- *From:* Storj, Tahoe-LAFS
+	- *Objective:* O5 stretch
+	- *Note:* First to cut if January slips
 
 ### Won't (this time)
 
-- **R13:** Protection against malicious or Sybil nodes. Out of scope because users are trusted (agreed 5 Oct). Future work.
-- **R14:** A graphical app. Out of scope because a CLI is enough to demonstrate the product. Future work.
+- **R13:** Protection against malicious or Sybil nodes.
+	- *Reason:* Out of scope because users are trusted (agreed 5 Oct)
+	- *Objective:* Future work
+- **R14:** A graphical app.
+	- *Reason:* Out of scope because a CLI is enough to demonstrate the product
+	- *Objective:* Future work
 
 ## Questions
 
